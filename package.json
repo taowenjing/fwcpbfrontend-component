@@ -1,11 +1,16 @@
 {
-  "name": "fwcpb-component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fwcpbfrontend-component",
+  "version": "0.1.1",
+  "description": "基于 Vue 的插件开发",
+  "main": "lib/fwcpb.umd.min.js",
+  "keyword": "vue开发",
+  "private": false,
+  "author": "taowj,huojl,shaoyw,chenj",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name fwcpb --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
