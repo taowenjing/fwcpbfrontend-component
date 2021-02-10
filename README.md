@@ -30,6 +30,12 @@ npm run serve
 
 1、可以通过：npm i fwcpbfrontend-component去安装使用
 
+在main.js中加入
+
+import fwcpbfrontendComponent from 'fwcpbfrontend-component';
+
+Vue.use(fwcpbfrontendComponent);即可引用
+
 2、可以通过引入js的方式引入，js即为lib下的fwcpb.umd.js
 
 git地址：https://github.com/taowenjing/fwcpbfrontend-component

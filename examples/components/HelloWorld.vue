@@ -2,7 +2,7 @@
     <div class="test-button">
         <fwcpb-button  @click="testClick" width="120" >按钮</fwcpb-button>
         <fwcpb-button  @click="testClick" height="40" radius="20">圆角</fwcpb-button>
-        <fwcpb-button  @click="testClick" disabled classhover="fwcpb-button-disabled">禁用</fwcpb-button>
+        <fwcpb-button  @click="testClick" bordercolor="#c0c4cc" disabled classhover="fwcpb-button-disabled">禁用</fwcpb-button>
         <fwcpb-button  @click="testClick" width="80" height="30">小按钮</fwcpb-button>
         <fwcpb-button  @click="testClick" >蓝色</fwcpb-button>
         <fwcpb-button  @click="testClick" backcolor="#5daf34">绿色</fwcpb-button>

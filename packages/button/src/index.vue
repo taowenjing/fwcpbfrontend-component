@@ -80,7 +80,7 @@
                     'font-size': this.size + 'px',
                     'background-color': this.backcolor,
                     'color': this.color ? this.color : '#fff',
-                    'border-color': this.bordercolor ? this.bordercolor : this.backcolor,
+                    'border': this.bordercolor ? '1px solid' + this.bordercolor : 'none',
                     'text-align': 'center',
                     'border-radius': this.radius ? this.radius + 'px' : '4px'
                 };
