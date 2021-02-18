@@ -62,6 +62,10 @@
             disabled: {
                 type: Boolean,
                 default: false
+            }, // 单位
+            unitlength: {
+                type: String,
+                default: 'px'
             }
         },
         computed: {
@@ -74,15 +78,15 @@
             styleObject: function styleObject() {
                 return {
                     'cursor': this.cursor,
-                    'width': this.width - 2 + 'px',
-                    'height': this.height - 2 + 'px',
-                    'line-height': this.height - 2 + 'px',
-                    'font-size': this.size + 'px',
+                    'width': this.unitlength === 'px' ? (this.width - 2 + this.unitlength) : (this.width - 0.02 + this.unitlength),
+                    'height': this.unitlength === 'px' ? (this.height - 2 + this.unitlength) : (this.height - 0.02 + this.unitlength),
+                    'line-height': this.unitlength === 'px' ? (this.height - 2 + this.unitlength) : (this.height - 0.02 + this.unitlength),
+                    'font-size': this.size + this.unitlength,
                     'background-color': this.backcolor,
                     'color': this.color ? this.color : '#fff',
-                    'border': this.bordercolor ? '1px solid' + this.bordercolor : 'none',
+                    'border': this.bordercolor ? (this.unitlength === 'px' ? ('1'+this.unitlength+' solid' + this.bordercolor) : ('0.01'+this.unitlength+' solid' + this.bordercolor)) : 'none',
                     'text-align': 'center',
-                    'border-radius': this.radius ? this.radius + 'px' : '4px'
+                    'border-radius': this.radius ? this.radius + this.unitlength : (this.unitlength === 'px' ? ('4'+this.unitlength) : ('0.04'+this.unitlength))
                 };
             }
         },

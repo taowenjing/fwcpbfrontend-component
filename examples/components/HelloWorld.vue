@@ -10,6 +10,7 @@
         <fwcpb-button  @click="testClick" backcolor="#cf9236">警告</fwcpb-button>
         <fwcpb-button  @click="testClick" backcolor="#f56c6c">危险</fwcpb-button>
         <fwcpb-button icon="icon-comment"  @click="testClick">图标</fwcpb-button>
+        <fwcpb-button icon="icon-comment"  @click="testClick" unitlength="rem" width="5" height="2.5">单位</fwcpb-button>
     </div>
 </template>
 
