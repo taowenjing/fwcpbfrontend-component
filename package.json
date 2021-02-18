@@ -1,6 +1,6 @@
 {
   "name": "fwcpbfrontend-component",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "基于 Vue 组件开发",
   "main": "lib/fwcpb.umd.min.js",
   "keyword": "vue开发",
